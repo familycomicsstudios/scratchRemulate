@@ -5,6 +5,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
+    <script>
+      function search() {
+        $("#scratch").attr("href", "https://scratch.mit.edu/users/".concat($("#input").val()));
+        $("#user").text("Remulate: ".concat($("#input").val()));
+      }
+    </script>
     <h1 id="user">Remulate: </h1>
     <input type="text" id="input"></input><button onclick="search()">Search</button><br/>
     <a id="scratch" href="https://scratch.mit.edu">Scratch</a>
@@ -15,11 +21,5 @@
     <br/>
     <a id="ppc" href="https://postpercent.rirurin.com/">Postpercent</a>
     <br/>
-    <script>
-      function search() {
-        $("#scratch").attr("href", "https://scratch.mit.edu/users/".concat($(#input).val()));
-        $("#user").text("Remulate: ".concat($(#input).val()));
-      }
-    </script>
   </body>
 </html>
